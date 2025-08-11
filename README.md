@@ -25,8 +25,9 @@ trailingAnnualDividendRate
 
 regularMarketPrice
 
-input_path=output/output_2025_06_26.json
-output_path=output/output_2025_06_26_partial_data.json
+time_stamp=2025_08_11
+input_path=output/output_${time_stamp}.json
+output_path=output/output_${time_stamp}_partial_data.json
 node src/filter_data.js -i $input_path -o $output_path -f trailingPE,forwardPE,dividendYield,trailingAnnualDividendYield
 
 
