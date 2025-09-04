@@ -32,13 +32,13 @@ regularMarketPrice
 
 # analyze data
 ## mac
-time_stamp=2025_08_14
+time_stamp=2025_09_04
 input_path=output/output_${time_stamp}.json
 output_path=output/output_${time_stamp}_partial_data.json
 node src/filter_data.js -i $input_path -o $output_path -f trailingPE,forwardPE,dividendYield,trailingAnnualDividendYield
 
 ## windows
-$time_stamp = "2025_08_15"
+$time_stamp = "2025_09_04"
 $input_path = "output/output_${time_stamp}.json"
 $output_path = "output/output_${time_stamp}_partial_data.json"
 node src/filter_data.js -i $input_path -o $output_path -f trailingPE,forwardPE,dividendYield,trailingAnnualDividendYield
@@ -51,6 +51,9 @@ Good Stock
     EIX
     CMCSA
     FANG
+    CAG
+    UPS
+    PFE
 
 Bad Stock
     GM
@@ -62,12 +65,13 @@ Bad Stock
     MO
 
 Don't know
+    DHI
+    LEN
+
     SYF
     PHM
     APA
-    LEN
     HPE
-    DHI
     ACGL
     GL
     NTRS
