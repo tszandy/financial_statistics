@@ -44,16 +44,26 @@ $output_path = "output/output_${time_stamp}_partial_data.json"
 node src/filter_data.js -i $input_path -o $output_path -f trailingPE,forwardPE,dividendYield,trailingAnnualDividendYield
 
 
-Good Stock
-    AES
-    SYF
-    DVN
-    EIX
-    CMCSA
-    FANG
-    CAG
-    UPS
-    PFE
+
+美国稀土相关公司
+Ramaco Resources
+Energy Fuels
+USA Rare Earth 
+MP Materials
+Trilogy Metals
+
+
+Good Stock ?
+    MFIN  # https://www.google.com/finance/quote/MFIN:NASDAQ
+    AES   # https://www.google.com/finance/?q=AES
+    SYF   # https://www.google.com/finance/?q=SYF
+    DVN   # https://www.google.com/finance/?q=DVN
+    EIX   # https://www.google.com/finance/?q=EIX
+    CMCSA # https://www.google.com/finance/?q=CMCSA
+    FANG  # https://www.google.com/finance/?q=FANG
+    CAG   # https://www.google.com/finance/?q=CAG
+    UPS   # https://www.google.com/finance/quote/UPS:NYSE
+    PFE   # https://www.google.com/finance/?q=PFE
 
 Bad Stock
     GM
