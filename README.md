@@ -2,6 +2,11 @@
 python -m venv financial_py
 
 # activate python environment
+## set up .envrc for direnv
+```.envrc
+source financial_py/bin/activate
+```
+
 ## mac
 source financial_py/bin/activate
 ## windows
@@ -32,6 +37,12 @@ regularMarketPrice
 
 # analyze data
 ## mac
+### get the latest output_*.json file
+latest_file=$(ls -t output/output_*.json | head -n 1)
+
+### extract timestamp (YYYY_MM_DD)
+time_stamp=$(basename "$latest_file" | sed -E 's/output_([0-9_]+)\.json/\1/')
+
 time_stamp=2025_09_04
 input_path=output/output_${time_stamp}.json
 output_path=output/output_${time_stamp}_partial_data.json
@@ -64,6 +75,7 @@ Good Stock ?
     CAG   # https://www.google.com/finance/?q=CAG
     UPS   # https://www.google.com/finance/quote/UPS:NYSE
     PFE   # https://www.google.com/finance/?q=PFE
+    DHL Group (Deutsche Post AG)
 
 Bad Stock
     GM
